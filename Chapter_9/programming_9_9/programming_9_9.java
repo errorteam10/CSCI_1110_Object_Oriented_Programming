@@ -7,6 +7,8 @@ import java.util.Scanner;
 * 
 * Programming exercise
 *
+* @author Brent Dalling
+*
 */
 
 class programming_9_9 {
@@ -43,10 +45,10 @@ class programming_9_9 {
 
 class RegularPolygon {
 	
-	private static double x;
-	private static double y;
-	private static double side;
-	private static int n;
+	private double x;
+	private double y;
+	private double side;
+	private int n;
 	
 	// Set No Arg Constructor
 	public RegularPolygon () {
@@ -96,63 +98,63 @@ class RegularPolygon {
 			setSide(length);
 		}
 	
-	public static double getX() {
+	public double getX() {
 		
 		// Return X Value
-		return x;
+		return  x;
 	}
 	
-	public static void setX(double value) {
+	public void setX(double value) {
 		
 		// Set X Value
-		x = value;
+		 x = value;
 	}
 	
-	public static double getY() {
+	public double getY() {
 		
 		// Return Y Value
-		return y;
+		return  y;
 	}
 	
-	public static void setY(double value) {
+	public void setY(double value) {
 		
 		// Set Y Value
-		y = value;
+		 y = value;
 	}
 	
-	public static double getN() {
+	public double getN() {
 		
 		// Return N Value
-		return n;
+		return  n;
 	}
 	
-	public static void setN(int value) {
+	public void setN(int value) {
 		
 		// Set N Value
-		n = value;	
+		 n = value;	
 	}
 	
-	public static double getSide() {
+	public double getSide() {
 		
 		// Return Side Value
-		return side;
+		return  side;
 	}
 	
-	public static void setSide(double value) {
+	public void setSide(double value) {
 		
 		// Set Side Value
-		side = value;
+		 side = value;
 	}
 	
-	public static double getPerimeter() {
+	public double getPerimeter() {
 		
 		// Return Perimeter Value
-		return (n * side);
+		return ( n *  side);
 	}
 	
-	public static double getArea() {
+	public double getArea() {
 		
 		// Return Area Value
-		return ((n * Math.pow(n, 2)) / (4 * Math.tan(Math.PI / n)));
+		return (( n * Math.pow( n, 2)) / (4 * Math.tan(Math.PI /  n)));
 	}
 }
