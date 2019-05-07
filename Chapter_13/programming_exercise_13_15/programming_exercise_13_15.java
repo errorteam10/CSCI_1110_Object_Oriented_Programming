@@ -9,6 +9,7 @@ class programming_eercise_13_15 {
 		
 	}
 }
+
 class Rational extends Number implements Comparable<Rational> {
 	// Data fields for numerator and denominator
 	private long numerator = 0;
