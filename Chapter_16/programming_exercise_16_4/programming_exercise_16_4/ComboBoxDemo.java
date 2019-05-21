@@ -98,6 +98,10 @@ public class ComboBoxDemo extends Application {
 		BorderPane pane = new BorderPane();
 			
 		BorderPane paneForComboBox = new BorderPane();
+		
+		pane.setOnKeyPressed(e -> System.out.println("Key pressed " + e.getCode() + " "));
+		
+		pane.setOnKeyTyped(e -> System.out.println("Key Typed " + e.getCode()));
 		paneForComboBox.setLeft(new Label("Select a country: "));
 		paneForComboBox.setCenter(cbo);
 		pane.setTop(paneForComboBox);
